@@ -222,7 +222,7 @@ __EOF__
 # Install
 
 #-- Update Permissions
-echo "update permissions...2222"
+echo "update permissions...(override eccube_install.sh)"
 adjust_directory_permissions
 
 #-- Setup Database
