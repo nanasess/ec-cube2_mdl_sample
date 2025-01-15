@@ -16,3 +16,5 @@ services:
       - ".:/var/www/app/data/downloads/module/mdl_sample"
       - "./dockerbuild/sql:/var/www/sql:delegated"
       - "./dockerbuild/index.php:/var/www/app/html/test/upgrade/index.php"
+      # XXX macOS で .git が含まれるディレクトリをマウントすると、 chmod -R go+w "./data/downloads" がエラーになるので eccube_install.sh を上書きする
+      - "./dockerbuild/eccube_install.sh:/var/www/app/eccube_install.sh"
